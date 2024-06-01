@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My first website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a
+          href="/"
+          alt="In the near future we will put our own logo for the portfolio."
+          >Logo</a
+        >
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/about.html">About Me</a></li>
+          <li><a href="/pages/projects/">My Projects</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>My Portfolio</h1>
+
+      <div>
+        <h1>Short and precise description</h1>
+
+        <img src="/" alt="The corresponding image will be attached soon." />
+
+        <h2 id="introduction-section">Introduction about me</h2>
+        <p><strong>Name:</strong>Anderson Lozano Velasquez</p>
+        <p>
+          <strong>Description</strong>: A person who constantly dissociates from
+          reality, except when it really needs all his concentration, when this
+          happens enters what is known as the <em>Flow Zone</em>, so that he can
+          get out of this state needs to have completed the task assigned to him
+          or enter an unmanageable stress at the time that breaks the neural
+          connection causing this state.
+        </p>
+      </div>
+
+      <section>
+      <h3>Abilities:</h3>
+      <ul>
+        <li>Active listening</li>
+        <li>Troubleshooting</li>a<a<<
+        <li>High capacity for teamwork</li>
+      </ul>
+
+      <h3>Hobbies:</h3>
+      <ul>
+        <li>Design 3D</li>
+        <li>VideoGames</li>
+        <li>Movies</li>
+        <li>Development VideoGames</li>
+        <li>Animation VideoGames</li>
+      </ul>
+
+      <h3>Preferences:</h3>
+      <dl>
+        <dt>Colors</dt>
+        <dd>Red</dd>
+        <dd>Black</dd>
+        <dd>Gray Scale</dd>
+
+        <dt>Softwares:</dt>
+        <dd>Windows</dd>
+        <dd>Blender</dd>
+        <dd>Krita</dd>
+        <dd>Unity</dd>
+        <dd>VSCode</dd>
+      </dl>
+
+      <h3>Languages of Develop</h3>
+      <ol>
+        <li>JavaScript</li>
+        <li>C#</li>
+        <li>Flutter</li>
+      </ol>
+
+      <h3>I speak languages</h3>
+      <dt>Languages</dt>
+        <dd>English: A1</dd>
+        <dd>Spanish: Native</dd>
+    </section>
+
+      <a href="#introduction-section">Link to the introductory section</a>
+
+      <h2>My Information Contact</h2>
+      <p><strong>Name:</strong>Anderson Lozano Velasquez</p>
+      <p><strong>Name:</strong>3243340484 and 3152936838</p>
+      <p><strong>Email:</strong>adslozanov@gmail.com</p>
+
+      <p>
+        I leave a personal video that talks about me and shows a little of what
+        I do.
+      </p>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/CapMfleSKWI?si=xW_asm1eUPQvao6F"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <p>
+        It's on youtube too, if you want to take a look and share it with
+        someone.
+        <a
+          href="https://www.youtube.com/watch?v=CapMfleSKWI&t=24s"
+          target="_blank"
+          >click here</a
+        >
+      </p>
+
+      <h2>You Information Contact</h2>
+      <form action="/">
+        <p>fields marked with * are required</p>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="first_name">First Name:*</label>
+          <input
+            id="first_name"
+            type="text"
+            name="first_name"
+            placeholder="Daniel"
+            required
+          />
+          <br />
+          <br />
+          <label for="last_name">Last Name:*</label>
+          <input
+            id="last_name"
+            type="text"
+            name="last_name"
+            placeholder="Martinez Cuesta"
+            required
+          />
+          <br />
+          <br />
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="homosexuals">39 types of homosexuals</option>
+            <option value="other">other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Personal Information</legend>
+          <label for="email">Email:*</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="exampleemail@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Must be a valid email address"
+            required
+          />
+          <br />
+          <br />
+          <label for="number">Number:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="444 444 4444"
+            pattern="[0-9]{10}"
+            title="Must contain 9-10 numeric digits"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>What kind of help can I give you?</legend>
+          <input
+            type="radio"
+            id="quotation"
+            name="helpType"
+            value="Quotation"
+          />
+          <label for="quotation">Quotation</label>
+          <br />
+          <input
+            type="radio"
+            id="complaint"
+            name="helpType"
+            value="Complaint"
+          />
+          <label for="complaint">Complaint</label>
+          <br />
+          <input type="radio" id="request" name="helpType" value="Request" />
+          <label for="request">Request</label>
+          <br />
+          <input
+            type="radio"
+            id="recommendation"
+            name="helpType"
+            value="Recommendation"
+          />
+          <label for="recommendation">Recommendation</label><br />
+          <br />
+          <label for="date">What day can I contact you?*</label>
+          <br />
+          <input type="datetime-local" id="date" name="date" required />
+          <br />a
+          <label for="description">Additional Information</label>
+          <textarea name="description" id="description"></textarea>
+          <br />
+          <label for="files">Attachments:</label>
+          <br />
+          <input type="file" id="files" name="files" multiple />
+          <br />
+        </fieldset>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
