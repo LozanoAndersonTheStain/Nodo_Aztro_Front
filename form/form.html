@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <h1>Form NODO</h1>
+    </header>
+    <main>
+      <section id="form-1">
+        <h2>You Information Contact</h2>
+        <form action="/">
+          <p>fields marked with * are required</p>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">
+              Name:* 
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Anderson"
+                required
+              />
+            </label>
+            <br />
+            <br />
+            <label for="last-name">
+              LastName:* 
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Lozano"
+                required
+              />
+              <br />
+              <br />
+            </label>
+            <label for="surname">
+              (Optional) Surnames: 
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="Velasquez"
+              />
+            </label>
+            <br />
+            <br />
+            <label for="email">
+              Email:* 
+              <input
+                type="email"
+                id="email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Must be a valid email address"
+                placeholder="example@email.com"
+                required
+              />
+            </label>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Local Information</legend>
+            <label for="direction">
+              Direction:* 
+              <input
+                type="text"
+                id="direction"
+                name="direction"
+                placeholder="Cl 00 Cr 00 - 00 "
+              />
+            </label>
+            <br />
+            <br />
+            <label for="department">
+              Department:* 
+              <select name="department" id="department" required>
+                <option value="Select_an_option" selected disabled>
+                  Select an option
+                </option>
+                <option value="amazonas">Amazonas</option>
+                <option value="antioquia">Antioquia</option>
+                <option value="arauca">Arauca</option>
+                <option value="Atlantico">Atlántico</option>
+                <option value="bolivar">Bolívar</option>
+                <option value="boyaca">Boyacá</option>
+                <option value="caldas">Caldas</option>
+                <option value="caqueta">Caquetá</option>
+                <option value="casanare">Casanare</option>
+                <option value="cauca">Cauca</option>
+                <option value="cesar">Cesar</option>
+                <option value="choco">Chocó</option>
+                <option value="cordoba">Cordoba</option>
+                <option value="cundinamarca">Cundinamarca</option>
+                <option value="guania">Guanía</option>
+                <option value="guaviare">Guaviare</option>
+                <option value="huila">Huila</option>
+                <option value="La_guajira">La Guajira</option>
+                <option value="magdalena">Magdalena</option>
+                <option value="meta">Meta</option>
+                <option value="nariño">Nariño</option>
+                <option value="norte_de_santander">Norte de Santander</option>
+                <option value="putumayo">Putumayo</option>
+                <option value="quindio">Quindio</option>
+                <option value="risaralda">Risaralda</option>
+                <option value="san_andres_y_providencia">
+                  San Andres y Providencia
+                </option>
+                <option value="santander">Santander</option>
+                <option value="sucre">Sucre</option>
+                <option value="tolima">Tolima</option>
+                <option value="valle_del_cauca">Valle del Cauca</option>
+                <option value="vaupés">Vaupés</option>
+                <option value="vichada">Vichada</option>
+              </select>
+            </label>
+            <br />
+            <br />
+            <label for="city"
+              >Country:
+              <select name="city" id="city" required>
+                <option value="Select_an_option" selected disabled>
+                  Select an option
+                </option>
+                <option value="Arauca">Arauca</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Bogotá ">Bogotá</option>
+                <option value="Bucaramanga">Bucaramanga</option>
+                <option value="Cartagena_de_Indias">Cartagena de Indias</option>
+                <option value="Cali">Cali</option>
+                <option value="Cúcuta">Cúcuta</option>
+                <option value="Florencia">Florencia</option>
+                <option value="Ibagué">Ibagué</option>
+                <option value="Inírida">Inírida</option>
+                <option value="Leticia">Leticia</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Medellín">Medellín</option>
+                <option value="Mitú">Mitú</option>
+                <option value="Mocoa">Mocoa</option>
+                <option value="Montería">Montería</option>
+                <option value="Neiva">Neiva</option>
+                <option value="Puerto Carreño">Puerto Carreño</option>
+                <option value="Pasto">Pasto</option>
+                <option value="Pereira">Pereira</option>
+                <option value="Popayán">Popayán</option>
+                <option value="Quibdó">Quibdó</option>
+                <option value="Riohacha">Riohacha</option>
+                <option value="San Andrés">San Andrés</option>
+                <option value="Santa Marta">Santa Marta</option>
+                <option value="Sincelejo">Sincelejo</option>
+                <option value="San_José_del_Guaviare">
+                  San José del Guaviare
+                </option>
+                <option value="Tunja">Tunja</option>
+                <option value="Valledupar">Valledupar</option>
+                <option value="Villavicencio">Villavicencio</option>
+                <option value="Yopal">Yopal</option>
+              </select>
+            </label>
+            <br />
+            <br />
+            <label for="phone">
+              Phone Number:*
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="000 000 0000"
+                pattern="[0-9]{10}"
+                title="Must contain 9-10 numeric digits"
+                required
+              />
+              <br />
+              <br />
+              <label for="personal_description"> Personal Description: </label>
+              <textarea
+                name="personal_description"
+                id="personal_description"
+                placeholder="informacion sobre ti"
+              ></textarea>
+            </label>
+          </fieldset>
+        </form>
+        <input
+          type="button"
+          id="nextButton"
+          value="Next"
+          style="margin-top: 10px"
+        />
+      </section>
+    </main>
+    <script>
+      document.getElementById("nextButton").onclick = function () {
+        window.location.href = "form2.html";
+      };
+    </script>
+  </body>
+</html>
