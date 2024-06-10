@@ -81,9 +81,7 @@
             <label for="department">
               Department:* 
               <select name="department" id="department" required>
-                <option value="Select_an_option" selected disabled>
-                  Select an option
-                </option>
+                <option value="" selected disabled>Select an option</option>
                 <option value="amazonas">Amazonas</option>
                 <option value="antioquia">Antioquia</option>
                 <option value="arauca">Arauca</option>
@@ -125,9 +123,7 @@
             <label for="city"
               >Country:
               <select name="city" id="city" required>
-                <option value="Select_an_option" selected disabled>
-                  Select an option
-                </option>
+                <option value="" selected disabled>Select an option</option>
                 <option value="Arauca">Arauca</option>
                 <option value="Armenia">Armenia</option>
                 <option value="Barranquilla">Barranquilla</option>
@@ -177,9 +173,11 @@
                 title="Must contain 9-10 numeric digits"
                 required
               />
-              <br />
-              <br />
-              <label for="personal_description"> Personal Description: </label>
+            </label>
+            <br />
+            <br />
+            <label for="personal_description"
+              >Personal Description:
               <textarea
                 name="personal_description"
                 id="personal_description"

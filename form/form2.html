@@ -13,16 +13,14 @@
       <section id="form-2">
         <h2>Career Information</h2>
         <p>Fields marked with * are required</p>
-            <form action="/"></form>
+        <form action="/">
           <p>Select the career and the modality</p>
           <fieldset>
             <legend>To which career do you wish to apply?</legend>
             <div>
               <label for="career">Careers:*</label>
               <select name="career" id="career" required>
-                <option value="Select_an_option" selected disabled>
-                  Select an option
-                </option>
+                <option value="" selected disabled>Select an option</option>
                 <option value="Jobs_to_be_Done">JOBS TO BE DONE</option>
                 <option value="Cloud_Native">CLOUD NATIVE</option>
                 <option value="Frontend">FRONTEND</option>
@@ -54,17 +52,14 @@
             <div>
               <label for="modality">Modality:</label>
               <select name="modality" id="modality" required>
-                <option value="Select_an_option" selected disabled>
-                  Select an option
-                </option>
+                <option value="" selected disabled>Select an option</option>
                 <option value="On-site">On-site</option>
                 <option value="Online">Online</option>
               </select>
             </div>
             <br />
             <div>
-              <label for="job">Are you currently working?</label>
-              <br />
+              <label>Are you currently working?</label>
               <input type="radio" id="Yes" name="job" value="Yes" />
               <label for="Yes">Yes</label>
               <input type="radio" id="No" name="job" value="No" />
@@ -74,8 +69,8 @@
         </form>
       </section>
       <div class="buttons">
-        <input type="reset" value="Reset" style="margin: 10px;"/>
-        <input type="submit" value="Submit" style="margin: 10px;"/>
+        <input type="reset" value="Reset" style="margin: 10px" />
+        <input type="submit" value="Submit" style="margin: 10px" />
       </div>
     </main>
   </body>
