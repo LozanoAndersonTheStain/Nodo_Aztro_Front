@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Noto Serif";
+    src:
+        url("./NotoSerif.woff") format("woff"),
+        url("./NotoSerif.ttf") format("truetype")
+}
+
+body, html {
+    font-family: 'Noto Serif', sans-serif;
+}
