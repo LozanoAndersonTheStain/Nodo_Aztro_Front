@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles-index.css" />
+    <link rel="stylesheet" href="../styles/styles-rectangulo.css" />
+    <title>Propiedades del Rectangulo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__title">
+          <h1>Menú de Cálculos</h1>
+        </div>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="rectangulo.html">Calcular propiedades de un rectángulo</a>
+          </li>
+          <li class="navbar__item">
+            <a href="circulo.html">Calcular propiedades de un círculo</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="container__section">
+      <h1 class="container__section__text">El RECTANGULO</h1>
+      <div class="container__section__image">
+        <img
+          class="section__image"
+          src="../../assets/images/superhero.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="container__section__form">
+      <h2 class="container__section__title">
+        CALCULADORA DE ÁREA, PERÍMETRO Y DIAGONAL
+      </h2>
+      <div class="container__section__items">
+        <div class="container__section__items__img">
+          <img class="section__img" src="../../assets/images/rectangulo.png" />
+        </div>
+        <section class="container__section__params">
+          <div class="container__sections__items__param1">
+            <h3 class="section__items__param1__text">Base en centímetros</h3>
+            <input
+              id="param1"
+              class="section__items__param1__input"
+              type="number"
+              name="number1"
+              placeholder="Escribe la base"
+            />
+          </div>
+          <div class="container__sections__items__param2">
+            <h3 class="section__items__param2__text">Altura en centímetros</h3>
+            <input
+              id="param2"
+              class="section__items__param2__input"
+              type="number"
+              name="number2"
+              placeholder="Escribe la altura"
+            />
+          </div>
+          <div class="container__section__item__btn">
+            <input
+              type="button"
+              class="section__items__btn"
+              id="btnCalcular"
+              value="Calcular"
+              onclick="calcularRectangulo()"
+            />
+          </div>
+        </section>
+        <section class="container__answer">
+          <div class="container__answer__item__subtitle">
+            <h3 class="container__answer__item__subtitle">Resultados</h3>
+          </div>
+          <div class="container__answer__column">
+            <label for="input1" class="container__answer__item__text"
+              >Área (em2)</label
+            >
+            <label for="input2" class="container__answer__item__text"
+              >Perímetro (em)</label
+            >
+            <label for="input3" class="container__answer__item__text"
+              >Diagonal (em)</label
+            >
+          </div>
+        </section>
+        <section class="container__section__answer">
+          <div class="container__answer__inputs">
+            <input
+              id="input1"
+              class="section__answer__item__input"
+              type="number"
+            />
+            <input
+              id="input2"
+              class="section__answer__item__input"
+              type="number"
+            />
+            <input
+              id="input3"
+              class="section__answer__item__input"
+              type="number"
+            />
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script src="../Js/rectangulo.js"></script>
+  </body>
+</html>
