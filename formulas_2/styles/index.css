@@ -8,52 +8,6 @@ body, html {
     color: white;
 }
 
-/* Styles Nav */
-
-.container__nav {
-    margin: 1rem 0 0 9rem;
-    width: 80%;
-    height: 15%;
-    background-color: rgb(40, 40, 40);
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav {
-    width: 80%;
-    height: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 8rem;
-}
-
-.nav__logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav__items {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 4rem;
-
-    & a {
-        text-decoration: none;
-        color: white;
-    }
-}
-
 /* Styles Cards */
 
 .container__section {
@@ -79,11 +33,13 @@ body, html {
     background: rgb(113, 113, 113);
     display: flex;
     text-align: center;
+    text-decoration: none;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 1.01rem;
+    color: white;
     cursor: pointer;
 }
 
