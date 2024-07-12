@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         newInput.className = `input input${inputCount}`;
         newInput.type = "number";
         newInput.placeholder = `Segundos: P${inputCount}`;
+        newInput.min = 0;
 
         inputsContainer.appendChild(newLabel);
         inputsContainer.appendChild(newInput);
