@@ -20,7 +20,11 @@
                 >Promedio Natación</a
               >
             </li>
-            <li class="nav__item"><a href="#">Pesticida a Usar</a></li>
+            <li class="nav__item">
+              <a href="../../Pages/Ecuaciones/pesticida.html"
+                >Pesticida a Usar</a
+              >
+            </li>
             <li class="nav__item"><a href="#">Calcular Ladrillos</a></li>
             <li class="nav__item"><a href="#">IMC Salud</a></li>
             <li class="nav__item"><a href="#">Liquidación Empleados</a></li>
@@ -33,63 +37,54 @@
         <h1>Promedio Natación</h1>
       </div>
       <div class="content__form">
-          <label class="label" for="param1">Pruebas realizadas</label>
-          <input
-            id="param1"
-            class="input input1"
-            type="text"
-            placeholder="Número de pruebas realizadas hoy"
-          />
+        <label class="label" for="param1">Pruebas realizadas</label>
+        <input
+          id="param1"
+          class="input input1"
+          type="number"
+          placeholder="Número de pruebas realizadas"
+        />
 
-          <label class="label" for="param2">Segundos primera prueba</label>
+        <div id="container__inputs">
+          <label class="label" for="param2">Segundos prueba 1</label>
           <input
             id="param2"
             class="input input2"
-            type="text"
+            type="number"
             placeholder="Segundos: P1"
           />
-
-          <label class="label" for="param3">Segundos segunda prueba</label>
+        </div>
+        <div class="container__section__item__btn">
           <input
-            id="param3"
-            class="input input3"
-            type="text"
-            placeholder="Segundos: P2"
+            type="button"
+            class="section__items__btn--blue"
+            id="btnCalcular"
+            value="Calcular"
+            onclick=""
           />
-
-          <label class="label" for="param4">Segundos tercera prueba</label>
           <input
-            id="param4"
-            class="input input4"
-            type="text"
-            placeholder="Segundos: P3"
+            type="button"
+            class="section__items__btn--green"
+            id="btnAgregar"
+            value="Agregar campo"
           />
-
-          <label class="label" for="param5">Segundos cuarta prueba</label>
           <input
-            id="param5"
-            class="input input5"
-            type="text"
-            placeholder="Segundos: P4"
+            type="button"
+            class="section__items__btn--red"
+            id="btnEliminar"
+            value="Eliminar campo"
           />
-
-          <label class="label" for="param6">Segundos quinta prueba</label>
-          <input
-            id="param6"
-            class="input input6"
-            type="text"
-            placeholder="Segundos: P5"
-          />
-          <div class="container__section__item__btn">
-            <input
-              type="button"
-              class="section__items__btn"
-              id="btnCalcular"
-              value="Calcular"
-              onclick=""
-            />
-          </div>
+        </div>
+        <label class="label" for="answer">Total time is</label>
+        <input
+          id="answer"
+          class="input7"
+          type="text"
+          placeholder="Total Time"
+          disabled
+        />
       </div>
+      <script src="../../js/promedio_natacion.js"></script>
     </main>
   </body>
 </html>
