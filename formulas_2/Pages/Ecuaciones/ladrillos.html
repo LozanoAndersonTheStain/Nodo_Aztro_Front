@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/pesticida.css" />
+    <link rel="stylesheet" href="../../styles/ladrillos.css" />
     <link rel="stylesheet" href="../../../assets/fonts/fonts.css" />
     <link rel="stylesheet" href="../../styles/nav.css" />
-    <title>Pesticida</title>
+    <title>Calcular Ladrillos</title>
   </head>
   <body>
     <header class="container__nav">
@@ -36,58 +36,76 @@
     </header>
     <main class="container__content">
       <div class="content__title">
-        <h1>Pesticida a Utilizar</h1>
+        <h1>Ladrillos a Utilizar</h1>
       </div>
+
       <div class="content__form">
         <div class="container__inputs">
-          <label class="label" for="param1">Longitud de la base menor</label>
+          <h2 class="subtitle__1">Variables del ladrillo</h2>
+          <p>Los valores son calculados en Cm automaticamente</p>
+          <label class="label" for="param1">Largo del ladrillo</label>
           <input
+            class="input input1"
             type="number"
-            class="input input2"
             id="param1"
             name="param1"
-            placeholder="Longitud"
+            placeholder="Largo ladrillo"
             min="1"
           />
 
-          <label class="label" for="param2">Longitud de la base mayor</label>
+          <label class="label" for="param2">Alto del ladrillo</label>
           <input
-            type="number"
             class="input input2"
+            type="number"
             id="param2"
             name="param2"
-            placeholder="Longitud"
+            placeholder="Alto ladrillo"
             min="1"
           />
 
-          <label class="label" for="param3">Altura del Trapecio</label>
+          <h2 class="subtitle__2">Variables de la pared</h2>
+          <label class="label" for="param3">Altura de la pared</label>
           <input
-            type="number"
             class="input input3"
+            type="number"
             id="param3"
             name="param3"
-            placeholder="Altura"
+            placeholder="Altura pared"
             min="1"
           />
 
-          <label class="label" for="param4">Lado derecho</label>
+          <label class="label" for="param4">Ancho de la pared</label>
           <input
-            type="number"
             class="input input4"
+            type="number"
             id="param4"
             name="param4"
-            placeholder="Lado derecho"
+            placeholder="Ancho pared"
             min="1"
           />
-
-          <label class="label" for="param5">Lado izquierdo</label>
+          <h2 class="subtitle__3">¿Desea añadir estas características?</h2>
+          <label class="label" for="param5"
+            >Grosor del cemento (mortero) vertical</label
+          >
           <input
-            type="number"
             class="input input5"
+            type="number"
             id="param5"
             name="param5"
-            placeholder="Lado izquierdo"
-            min="1"
+            placeholder="Grosor cemento vertical"
+            min="0"
+          />
+
+          <label class="label" for="param6"
+            >Grosor del cemento (mortero) lateral</label
+          >
+          <input
+            class="input input6"
+            type="number"
+            id="param6"
+            name="param6"
+            placeholder="Grosor cemento lateral"
+            min="0"
           />
         </div>
         <div class="container__item__btn">
@@ -96,37 +114,19 @@
             class="item__btn--blue"
             id="btnCalcular"
             value="Calcular"
-            onclick="calcularPesticida()"
           />
         </div>
-        <label class="label" for="answer1">Area del Trapecio</label>
+        <label class="label" for="answer">Total de ladrillos</label>
         <input
-          type="number"
-          class="answer1 answer"
-          id="answer1"
-          name="answer1"
-        />
-
-        <label class="label" for="answer2"
-          >Litros de pesticida totales por M2</label
-        >
-        <input
-          type="number"
-          class="answer2 answer"
-          id="answer2"
-          name="answer2"
-        />
-
-        <label class="label" for="answer3">Cantidad de cerca recomendada</label>
-        <input
-          type="number"
-          class="answer3 answer"
-          id="answer3"
-          name="answer3"
+          id="answer"
+          class="answer"
+          type="text"
+          placeholder="Total"
+          disabled
         />
       </div>
     </main>
 
-    <script src="../../js/pesticidad.js"></script>
+    <script src="../../js/ladrillos.js"></script>
   </body>
 </html>
