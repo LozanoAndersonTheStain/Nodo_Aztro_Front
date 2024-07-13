@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/pomerdio_temporal.css" />
+    <link rel="stylesheet" href="../../styles/masa_corporal.css" />
     <link rel="stylesheet" href="../../../assets/fonts/fonts.css" />
     <link rel="stylesheet" href="../../styles/nav.css" />
-    <title>Promedio Natación</title>
+    <title>Masa corporal</title>
   </head>
   <body>
     <header class="container__nav">
@@ -38,57 +38,52 @@
     </header>
     <main class="container__content">
       <div class="content__title">
-        <h1>Promedio Natación</h1>
+        <h1>Masa Corporal</h1>
       </div>
       <div class="content__form">
-        <label class="label" for="param1">Pruebas realizadas</label>
-        <input
-          id="param1"
-          class="input input1"
-          type="number"
-          placeholder="Número de pruebas realizadas"
-        />
-
-        <div id="container__inputs">
-          <label class="label" for="param2">Segundos prueba 1</label>
+        <div class="container__inputs">
+          <label class="label" for="param1">Peso actual</label>
+          <input
+            id="param1"
+            class="input input1"
+            type="number"
+            placeholder="Ingrese el peso"
+          />
+          <label class="label" for="param2">Altura actual (m)</label>
           <input
             id="param2"
             class="input input2"
             type="number"
-            placeholder="Segundos: P1"
-            min="0"
+            placeholder="Ingrese la altura"
           />
         </div>
-        <div class="container__items__btn">
+        <div class="container__item__btn">
           <input
             type="button"
             class="item__btn--blue"
             id="btnCalcular"
             value="Calcular"
           />
-          <input
-            type="button"
-            class="item__btn--green"
-            id="btnAgregar"
-            value="Agregar campo"
-          />
-          <input
-            type="button"
-            class="item__btn--red"
-            id="btnEliminar"
-            value="Eliminar campo"
-          />
         </div>
-        <label class="label" for="answer">Total time is</label>
+        <label class="label" for="masa">Masa corporal (IMC)</label>
         <input
-          id="answer"
-          class="input7"
+          id="masa"
+          class="input input3"
           type="text"
-          placeholder="Total Time"
+          placeholder="Masa"
+          disabled
+        />
+        <label class="label" for="rango">Rango en que se encuentra</label>
+        <input
+          id="rango"
+          class=" input input4"
+          type="text"
+          placeholder="Rango"
           disabled
         />
       </div>
-      <script src="../../js/promedio_natacion.js"></script>
     </main>
+
+    <script src="../../js/masa_corporal.js"></script>
   </body>
 </html>
