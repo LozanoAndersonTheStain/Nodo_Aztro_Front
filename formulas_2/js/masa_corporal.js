@@ -3,9 +3,6 @@ document.getElementById("btnCalcular").addEventListener("click", function () {
     const alturaActualCm = parseFloat(document.getElementById("param2").value);
     const alturaActual = alturaActualCm / 100;
 
-    console.log("Peso actual:", pesoActual);
-    console.log("Altura actual:", alturaActual);
-
     if (isNaN(pesoActual) || isNaN(alturaActual)) {
         alert("Por favor, ingrese un valor numérico en todos los campos");
         return;
@@ -35,8 +32,6 @@ document.getElementById("btnCalcular").addEventListener("click", function () {
     } else {
         rango = "Obesidad Clase IV (Obesidad Extrema)";
     }
-
-    console.log("Rango calculado:", rango);
 
     document.getElementById("masa").value = masaCorporal.toFixed(2);
     document.getElementById("rango").value = rango;

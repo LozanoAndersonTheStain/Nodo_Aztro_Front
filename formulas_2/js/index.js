@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const formulas = [
         { title: "Sacar el promedio de distancia de un nadador", url: "../../Pages/Ecuaciones/promedio_temporal.html" },
         { title: "Calcular cuanto pesticida debe usarse", url: "../../Pages/Ecuaciones/pesticida.html" },
-        { title: "Calcular cuantos ladrillos deben usarse para hacer una pared", url: "../Pages/Ecuaciones/ladrillos.html" },
-        { title: "Calcular cuanta masa corporal tiene una persona", url: "../Pages/Ecuaciones/masa_corporal.html" },
-        { title: "Calcular la liquidación para tus empleados", url: "#" }
+        { title: "Calcular cuantos ladrillos deben usarse para hacer una pared", url: "../../Pages/Ecuaciones/ladrillos.html" },
+        { title: "Calcular cuanta masa corporal tiene una persona", url: "../../Pages/Ecuaciones/masa_corporal.html" },
+        { title: "Calcular la liquidación para tus empleados", url: "../../Pages/Ecuaciones/liquidacion.html" }
     ];
     const container = document.querySelector(".container__cards");
 
