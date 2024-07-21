@@ -23,7 +23,7 @@
     margin: 10% 0 0 20%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   &__title {
@@ -36,7 +36,7 @@
     @extend .perfil__nombre;
     margin: 5px 0 0 0;
     color: $blanco;
-    font-size: 1.10rem;
+    font-size: 1.3rem;
     text-align: start;
     font-weight: 500;
   }
@@ -98,7 +98,7 @@
   }
 }
 
-/** Perfil Media Query 530px and 899px*/
+/** Noticias Media Query 530px and 899px*/
 
 @media (min-width: 530px) and (max-width: 899px) {
   .news {
@@ -124,4 +124,31 @@
       font-size: 1.3rem;
     }
   }
+}
+
+/** Noticias Media Query 900px and 1215px*/
+
+@media (min-width: 900px) and (max-width: 1215px) {
+  .news {
+    .news__item {
+      padding: 0 100px 0 0;
+    }
+
+    &__items {
+      margin: 15% 0 20% 20%;
+    }
+
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
+    }
+
+    &__description {
+      font-size: 1.25rem;
+    }
+  }
+
 }
