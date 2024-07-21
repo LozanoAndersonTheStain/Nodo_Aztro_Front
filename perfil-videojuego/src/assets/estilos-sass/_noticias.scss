@@ -10,7 +10,6 @@
 
 .news {
   width: 50%;
-  height: 100&;
   background-color: $oscuro;
   color: $blanco;
 
@@ -45,12 +44,84 @@
   &__description {
     margin: 15px 0 20px 0;
     font-family: $fuente2;
+    color: $gris;
   }
 }
 
+/** Noticias Media Query 300px and 399px*/
 
+@media (min-width: 240px) and (max-width: 399px) {
+  .news {
+    width: 100%;
 
+    .news__item {
+      padding: 0 40px 0 0;
+    }
 
+    &__items {
+      margin: 10% 0 25% 20%;
+      gap: 4rem;
+    }
 
+    &__subtitle {
+      font-size: 0.7rem;
+    }
 
+    &__description {
+      font-size: 0.7rem;
+    }
+  }
+}
 
+/** Noticias Media Query 400px and 530px*/
+
+@media (min-width: 400px) and (max-width: 530px) {
+  .news {
+    width: 100%;
+
+    .news__item {
+      padding: 0 80px 0 0;
+    }
+
+    &__items {
+      margin: 10% 0 25% 20%;
+      gap: 4rem;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
+    }
+
+    &__description {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/** Perfil Media Query 530px and 899px*/
+
+@media (min-width: 530px) and (max-width: 899px) {
+  .news {
+    width: 100%;
+
+    .news__item {
+      padding: 0 90px 0 0;
+    }
+
+    &__items {
+      margin: 10% 0 20% 20%;
+    }
+
+    &__title {
+      font-size: 1.1rem;
+    }
+
+    &__subtitle {
+      font-size: 1.35rem;
+    }
+
+    &__description {
+      font-size: 1.3rem;
+    }
+  }
+}

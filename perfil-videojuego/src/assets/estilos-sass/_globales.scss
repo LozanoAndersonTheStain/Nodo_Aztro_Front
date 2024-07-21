@@ -7,6 +7,7 @@ $primario: #8841DA;
 $secundario: #3f579a;
 $oscuro: #333333;
 $gris: #aeadad;
+$negro: #000000;
 $blanco: #ffffff;
 $color-text-btn: #ffffff;
 $fuente1: "Oswald", sans-serif;
@@ -38,3 +39,14 @@ main {
     text-transform: lowercase;
   }
 }
+
+/** Global Media Query */
+
+@media (min-width: 240px) and (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

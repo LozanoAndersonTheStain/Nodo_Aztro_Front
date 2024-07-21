@@ -24,6 +24,7 @@
   &__titulo {
     @include estilos-texto($secundario, 0.8rem, $fuente1);
     margin: 0 0 10px 0;
+    opacity: 0.5;
   }
 
   &__boton {
@@ -72,6 +73,7 @@
 
     h2 {
       @extend .estadistica__item--number;
+      text-transform: uppercase;
       text-align: left !important;
     }
 
@@ -82,6 +84,7 @@
       color: $gris;
       letter-spacing: 1px;
       text-align: left;
+      opacity: 1;
     }
   }
 
@@ -131,7 +134,7 @@
 }
 
 .estadistica__item {
-  width: 75px;
+  width: 80px;
 
   &--number {
     font-family: $fuente1;
@@ -141,8 +144,6 @@
     @extend .perfil__titulo;
     font-family: $fuente1;
     font-weight: 500;
-    color: $gris;
-    letter-spacing: 1px;
     color: $oscuro;
     text-align: center;
   }
@@ -155,5 +156,341 @@
 
   h3 {
     @extend .perfil__titulo;
+  }
+}
+
+/** Perfil Media Query 240px and 399px*/
+
+@media (min-width: 240px) and (max-width: 399px) {
+  .perfil {
+    width: 100%;
+
+    &__avatar {
+      width: 80px;
+      border-radius: 100%;
+    }
+
+    &__nombre {
+      font-size: 1.3rem;
+    }
+
+    &__titulo {
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin: 0 0 5px 0;
+      opacity: 0.5;
+    }
+
+    &__boton {
+      font: {
+        weight: 500;
+      }
+    }
+
+    &--estadistica {
+      width: 130%;
+      margin: 12px;
+      gap: 1rem;
+    }
+
+    &__ubicacion {
+      margin: 1rem;
+    }
+
+    &__ubicacion {
+      display: grid;
+      padding: 10px 40px 10px 20px;
+      gap: 4px;
+
+      h3 {
+        font-size: 10px;
+        font-weight: 600;
+        opacity: 1;
+      }
+    }
+
+    &--galeria {
+      gap: 0;
+
+      .galeria__items  {
+        margin: 0.5rem 0 0 0;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 0.5rem;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          border-radius: 1rem;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+
+        & img:hover {
+          transform: scale(1.1);
+        }
+
+        .galeria__item__foto1 {
+          grid-column: 1 / 6;
+          grid-row: 1 / 3;
+        }
+
+        .galeria__item__foto2 {
+          grid-column: 1 / 4;
+        }
+
+        .galeria__item__foto3 {
+          grid-column: 4 / 6;
+        }
+
+        .galeria__item__foto4 {
+          width: 80px;
+          height: 80px;
+          margin-left: 10px;
+        }
+
+        .galeria__item__foto4 {
+          grid-column: 2 / 5;
+        }
+      }
+    }
+  }
+
+  .estadistica__item {
+
+    &--number {
+      font-size: 1.2rem;
+    }
+
+    span {
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+
+  .perfil__bio {
+    h2 {
+      margin-top: 0.5rem;
+    }
+
+    h3 {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+/** Perfil Media Query 400px and 530px*/
+
+@media (min-width: 400px) and (max-width: 530px) {
+  .perfil {
+    width: 100%;
+
+    &__avatar {
+      width: 100px;
+      border-radius: 100%;
+    }
+
+    &__nombre {
+      font-size: 1.6rem;
+    }
+
+    &__titulo {
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: 0.5;
+    }
+
+    &__boton {
+      margin-bottom: 0;
+      font: {
+        size: 1.2rem;
+      };
+    }
+
+    &--estadistica {
+      width: 110%;
+      margin: 10;
+      justify-content: space-around;
+    }
+
+    .perfil__ubicacion {
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__ubicacion {
+      margin: 1.5rem 0 0 0;
+    }
+
+    &__ubicacion {
+      padding: 20px 0 15px 35px;
+
+      i {
+        margin-top: -10px;
+        font-size: 3rem;
+      }
+
+      h3 {
+        font-size: 12px;
+        font-weight: 700;
+        opacity: 1;
+      }
+    }
+
+      &--galeria {
+        margin: 3rem 0 20px 0;
+        gap: 0;
+
+        .galeria__items {
+          margin: 1rem 0 0 0;
+          gap: 0.5rem;
+
+          .galeria__item__foto1 {
+            grid-column: 1 / 6;
+            grid-row: 1 / 3;
+          }
+
+          .galeria__item__foto2 {
+            width: 100%;
+            height: 80px;
+            margin-left: 15px;
+          }
+
+          .galeria__item__foto2 {
+            grid-column: 1 / 4;
+          }
+
+          .galeria__item__foto3 {
+            width: 80px;
+            height: 80px;
+            margin-left: 15px;
+          }
+
+          .galeria__item__foto3 {
+            grid-column: 4 / 6;
+          }
+
+          .galeria__item__foto4 {
+            width: 80px;
+            height: 80px;
+            margin-left: 10px;
+          }
+
+          .galeria__item__foto4 {
+            grid-column: 2 / 5;
+          }
+        }
+    }
+  }
+
+  .estadistica__item {
+
+    &--number {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: $negro;
+    }
+  }
+}
+
+/** Perfil Media Query 530px and 899px*/
+
+@media (min-width: 530px) and (max-width: 899px) {
+  .perfil {
+    width: 100%;
+
+    &__avatar {
+      width: 130px;
+      border-radius: 100%;
+    }
+
+    &__nombre {
+      font-size: 1.8rem;
+    }
+
+    &__titulo {
+      font-size: 1rem;
+      opacity: 0.5;
+    }
+
+    &__boton {
+      width: 100px;
+      padding: 10px 15px;
+      text-align: center;
+    }
+
+    &--estadistica {
+      width: 90%;
+      margin: 2rem 0 1.7rem 0;
+
+      &__ubicacion {
+        font-size: 0.8rem;
+      }
+    }
+
+    &__ubicacion {
+      padding: 25px 60px 20px 75px;
+
+    i {
+      font-size: 50px;
+      margin-top: -15px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      opacity: 1;
+    }
+  }
+
+  &--galeria {
+    margin: 3rem 0 20px 0;
+    align-items: center;
+
+    .galeria__items {
+        margin-left: 1px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 0.5rem;
+
+        .galeria__item__foto1 {
+          grid-column: 1 / 6;
+          grid-row: 1 / 3;
+        }
+
+        .galeria__item__foto2 {
+          grid-column: 1 / 4;
+        }
+
+        .galeria__item__foto3 {
+          grid-column: 4 / 6;
+        }
+
+        .galeria__item__foto4 {
+          width: 90px;
+          height: 90px;
+          margin-left: 10px;
+        }
+
+        .galeria__item__foto4 {
+          grid-column: 2 / 5;
+        }
+    }
+  }
+}
+
+  .estadistica__item {
+    &--number {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 1rem;
+      font-weight: 700;
+    }
   }
 }
